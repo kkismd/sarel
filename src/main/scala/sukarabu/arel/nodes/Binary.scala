@@ -2,8 +2,10 @@ package sukarabu.arel.nodes
 
 /**
   */
-class Binary(val left: Node, val right: Node) extends Node {
+class Binary[A](val left: Option[A], val right: Option[A]) extends Node {
 
 }
 
+class Join(left: Option[Node], right: Option[Node]) extends Binary(left, right) {
 
+}

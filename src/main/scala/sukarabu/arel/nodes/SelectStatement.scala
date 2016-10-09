@@ -2,7 +2,7 @@ package sukarabu.arel.nodes
 
 /**
   */
-class SelectStatement {
+class SelectStatement extends Node {
   val cores = Seq(new SelectCore)
 
 }

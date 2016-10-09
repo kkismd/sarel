@@ -1,7 +1,9 @@
 package sukarabu.arel.nodes
 
+import sukarabu.arel.attributes.Attribute
+
 /**
   */
-class Equality(left: Node, right: Node) extends Binary(left: Node, right: Node) {
+class Equality(val left: Attribute, val right: Quoted) extends Node {
 
 }
