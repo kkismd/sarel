@@ -5,7 +5,7 @@ import sukarabu.arel.{Predications, Table}
 
 /**
   */
-class Attribute(val relation: Table, val name: String) extends Node with Predications {
+class Attribute(val relation: Table, val name: Symbol) extends Node with Predications {
 
 }
 

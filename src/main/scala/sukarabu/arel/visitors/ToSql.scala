@@ -93,11 +93,11 @@ class ToSql extends Visitor {
     collector
   }
 
-  def quoteTableName(name: String): String = {
-    s""""$name""""
+  def quoteTableName(name: Symbol): String = {
+    s""""${name.name}""""
   }
 
-  def quoteColumnName(name: String): String = {
-    s""""$name""""
+  def quoteColumnName(name: Symbol): String = {
+    s""""${name.name}""""
   }
 }

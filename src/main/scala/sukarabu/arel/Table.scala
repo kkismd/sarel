@@ -5,8 +5,8 @@ import sukarabu.arel.nodes.{Equality, Node, SelectStatement, SqlLiteral}
 
 /**
   */
-class Table(val name: String) {
-  def apply(name: String): Attribute = {
+class Table(val name: Symbol) {
+  def apply(name: Symbol): Attribute = {
     new Attribute(this, name)
   }
 
